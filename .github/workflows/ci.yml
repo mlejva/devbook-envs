@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  push-envs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dbk
+        run: |-
+          curl -L https://usedevbook.com/install.sh | sh
+      - name: Push banana-node env
+        run: |-
+          cd banana-node && dbk push
+      - name: Push banana-python env
+        run: |-
+          cd banana-python && dbk push
