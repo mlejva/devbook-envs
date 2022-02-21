@@ -2,9 +2,8 @@
 
 This repo contains two custom environments for [Devbook](https://usedevbook.com) that can be published with the [Devbook CLI](https://github.com/devbookhq/devbookctl).
 
-[How to build custom environments](https://github.com/devbookhq/devbookctl#usage---deploying-custom-environment).
-
-Two custom envs:
+- [How to build custom environments](https://github.com/devbookhq/devbookctl#usage---deploying-custom-environment).
+- See how The Devbook CLI `dbk` is integrated into the [GitHub Action](./.github/workflows/ci.yml).
 
 ## 1. [banana-node](./banana-node/) environment
 
